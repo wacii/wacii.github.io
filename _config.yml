@@ -1,0 +1,55 @@
+# Site Info
+title: "wacii"
+description: "Dev blog"
+
+# Google APIs
+google_verify: false
+google_analytics: false 
+
+# Author Info
+author_name: "Andrew Cunningham"
+author_email: w.a.cunningham.ii@gmail.com
+author_gravatar: cc2a15c03f356754c8289f93a3da1a2c
+twitter_username: false
+github_username: wacii
+
+# Site Settings
+url: https://wacii.github.io
+baseurl: /
+permalink: /posts/:title
+timezone: America/New_York
+mathjax: false
+
+# Site Build
+highlighter: rouge
+markdown: kramdown
+kramdown:
+    input: GFM
+sass:
+    style: :compressed
+
+# Other Params
+include: [ "robots.txt" ]
+exclude: [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+plugins:
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+remote_theme: heiswayi/the-plain
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "null"
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
